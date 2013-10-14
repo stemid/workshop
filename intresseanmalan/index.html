@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forskningsavd. Workshops - Intresseanmälan</title>
+    <link rel="stylesheet" href="css/workshop.min.css" type="text/css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.24/themes/base/jquery-ui.css">
+  </head>
+  <body>
+    <div id="page-header" class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h1>Intresseanmälan för Forskningsavd. Workshops</h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="page-content" class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <form class="form-inline" id="interest-form" action="save.php" action="GET">
+            <fieldset>
+            <legend>Fyll i e-postadress eller något sorts namn/smeknamn, och välj ett datum för en workshop i kalendern. </legend>
+              <div class="form-group">
+                <label class="sr-only" for="inputName">Namn/E-post</label>
+                <input class="form-control" type="text" name="inputName" placeholder="Ett namn...">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="inputDate">Välj ett datum</label>
+                <input class="form-control" type="text" id="date-picker" name="inputDate" placeholder="2013-10-10">
+              </div>
+              <input class="btn btn-default" type="submit" name="sendForm" value="Skicka">
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <div id="page-alert" class="row">
+        <div class="col-lg-4 col-lg-offset-4">
+          <div class="alert alert-success fade in" id="register-success" style="display:none;">
+            <button type="button" class="close">&times;</button>
+            <h3>Anmälan slutförd</h3>
+            <p>Du har anmält dig!</p>
+          </div>
+          <div class="alert alert-danger fade in" id="register-error" style="display:none;">
+            <button type="button" class="close">&times;</button>
+            <h3>Anmälan misslyckades</h3>
+            <p>Pinsamt... </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="page-footer" class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <p><small>Sidan använder <a href="http://www.pts.se/sv/Bransch/Regler/lagar/lag-om-elektronisk-kommunikation/cookies-kakor/" title="Om Cookies på PTS">Cookies</a> som betyder att en liten fil sparas på er dator för att hålla reda på vem som anmält sig. I slutändan är det dock <a href="https://www.google.se/#q=rensa+cookies" title="Rensa Cookies på Google">ärlighet som gäller</a>.</small></p>
+        </div>
+      </div>
+    </div>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.datepicker.min.js"></script>
+    <script src="js/button.js"></script>
+    <script src="js/intresse.js"></script>
+  </body>
+</html>
