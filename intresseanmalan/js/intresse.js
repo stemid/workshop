@@ -1,5 +1,5 @@
 // This is weird. Months start from zero when comparing them in this callback!
-var workshopDates = ['2013-9-29'];
+var workshopDates = ['2013-9-29', '2013-10-26'];
 
 // Callback function for jquery-ui datepicker to disable dates.
 function availableDates (date) {
@@ -92,7 +92,7 @@ $(document).ready(function() {
 			'Sep', 
 			'Dec'
 		],
-		firstDay: 1,
+		firstDay: 0,
 		minDate: "2013-10-01",
 		maxDate: "2014-01-01",
 		showMonthAfterYear: true,
