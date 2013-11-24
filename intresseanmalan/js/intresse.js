@@ -3,6 +3,7 @@ var workshopDates = ['2013-9-29', '2013-10-26'];
 
 // Callback function for jquery-ui datepicker to disable dates.
 function availableDates (date) {
+  console.log(date);
   day = date.getDate();
   month = date.getMonth();
   current_date = date.getFullYear() + '-' + month + '-' + day;
