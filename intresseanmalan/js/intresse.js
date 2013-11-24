@@ -58,50 +58,50 @@ $(document).ready(function() {
     });
   });
 
-	// Datepicker
-	var dateArgs = {
-		dateFormat: 'yy-mm-dd',
-		dayNames: ['Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag', 'Söndag'],
-		dayNamesMin: ['Må', 'Ti', 'On', 'To', 'Fr', 'Lö', 'Sö'],
-		dayNamesShort: ['Mån', 'Tis', 'Ons', 'Tor', 'Fre', 'Lör', 'Sön'],
-		monthNames: [
-			'Januari', 
-			'Februari', 
-			'Mars', 
-			'April', 
-			'Maj', 
-			'Juni', 
-			'Juli', 
-			'Augusti', 
-			'September', 
-			'Oktober', 
-			'November', 
-			'December'
-		],
-		monthNamesShort: [
-			'Jan', 
-			'Feb', 
-			'Mar', 
-			'Apr', 
-			'Maj', 
-			'Jun', 
-			'Jul', 
-			'Aug', 
-			'Sep', 
-			'Okt', 
-			'Sep', 
-			'Dec'
-		],
-		firstDay: 0,
-		minDate: "2013-10-01",
-		maxDate: "2014-01-01",
-		showMonthAfterYear: true,
+  // Datepicker
+  var dateArgs = {
+    dateFormat: 'yy-mm-dd',
+    dayNames: ['Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag', 'Söndag'],
+    dayNamesMin: ['Må', 'Ti', 'On', 'To', 'Fr', 'Lö', 'Sö'],
+    dayNamesShort: ['Mån', 'Tis', 'Ons', 'Tor', 'Fre', 'Lör', 'Sön'],
+    monthNames: [
+      'Januari', 
+      'Februari', 
+      'Mars', 
+      'April', 
+      'Maj', 
+      'Juni', 
+      'Juli', 
+      'Augusti', 
+      'September', 
+      'Oktober', 
+      'November', 
+      'December'
+      ],
+    monthNamesShort: [
+      'Jan', 
+      'Feb', 
+      'Mar', 
+      'Apr', 
+      'Maj', 
+      'Jun', 
+      'Jul', 
+      'Aug', 
+      'Sep', 
+      'Okt', 
+      'Sep', 
+      'Dec'
+      ],
+    firstDay: 0,
+    minDate: "2013-10-01",
+    maxDate: "2014-01-01",
+    showMonthAfterYear: true,
     constraintInput: true,
-		// Funny display options
-		//showAnim: 'explode',
-		//showOptions: {pieces: 8},
+    // Funny display options
+    //showAnim: 'explode',
+    //showOptions: {pieces: 8},
     beforeShowDay: availableDates
-	}
+  }
 
-	$('#date-picker').datepicker(dateArgs);
+  $('#date-picker').datepicker(dateArgs);
 });
