@@ -77,7 +77,7 @@ $(document).ready(function() {
       'Oktober', 
       'November', 
       'December'
-      ],
+    ],
     monthNamesShort: [
       'Jan', 
       'Feb', 
@@ -91,7 +91,7 @@ $(document).ready(function() {
       'Okt', 
       'Sep', 
       'Dec'
-      ],
+    ],
     firstDay: 0,
     minDate: "2013-10-01",
     maxDate: "2014-01-01",
