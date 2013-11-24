@@ -1,14 +1,13 @@
 // This is weird. Months start from zero when comparing them in this callback!
-var workshopDates = ['2013-9-29', '2013-10-26'];
+//var workshopDates = ['2013-9-29', '2013-10-26'];
+var workshopDates = [
+  new Date('2013-10-29T00:00:00').getTime(), 
+  new Date('2013-11-26T00:00:00').getTime()
+]
 
 // Callback function for jquery-ui datepicker to disable dates.
 function availableDates (date) {
-  console.log(date);
-  day = date.getDate();
-  month = date.getMonth();
-  current_date = date.getFullYear() + '-' + month + '-' + day;
-  console.log(current_date + ' - ' + date);
-  if ($.inArray(current_date, workshopDates) !== -1) {
+  if ($.inArray(date.getTime(), workshopDates) !== -1) {
     return [true, "", "Workshop"];
   } else {
     return [false, "", "Ingen workshop"];
