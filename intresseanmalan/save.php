@@ -9,7 +9,7 @@ if (strlen($_GET['inputName']) > 0 && strptime($_GET['inputDate'], '%Y-%m-%d')) 
       print("Could not open file");
       http_response_code(500);
     } else {
-      if (!fwrite($fd, $_GET['inputName'].";".$_GET['inputDate'].";\n")) {
+      if (!fwrite($fd, preg_replace('/[\r\n\t\;]*/', '', _GET['inputName']).";".$_GET['inputDate'].";\n")) {
         print("Could not write to file");
         http_response_code(500);
       } else {
