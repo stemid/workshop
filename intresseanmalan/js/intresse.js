@@ -1,8 +1,11 @@
-// This is weird. Months start from zero when comparing them in this callback!
-//var workshopDates = ['2013-9-29', '2013-10-26'];
+// Add dates for the calendar here!
 var workshopDates = [
   new Date('2013-10-29T00:00:00').getTime(), 
-  new Date('2013-11-26T00:00:00').getTime()
+  new Date('2013-11-26T00:00:00').getTime(),
+  new Date('2014-02-25T00:00:00').getTime(),
+  new Date('2014-03-25T00:00:00').getTime(),
+  new Date('2014-04-29T00:00:00').getTime(),
+  new Date('2014-05-27T00:00:00').getTime()
 ]
 
 // Callback function for jquery-ui datepicker to disable dates.
